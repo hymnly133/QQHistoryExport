@@ -8,6 +8,7 @@ from src.dataParsing import parsing
 from src.generate import GeneratePDF_ReportLab
 from src.avatarDownload import download
 from src.validateSettings import validateSettings
+from src.generate import GenerateMD
 
 import webbrowser
 import os
@@ -37,6 +38,8 @@ class WorkerThread(QThread):
             self.download_avatar()
         elif self.task_id == "generate_pdf":
             self.generate_pdf()
+        elif self.task_id == "generate_md":
+            self.generate_md()
         elif self.task_id == "open_url":
             self.open_url(self.task_data)
         elif self.task_id == "start_parse":
@@ -83,6 +86,13 @@ class WorkerThread(QThread):
 
         generateInit = GeneratePDF_ReportLab.GenerateInit(self.log)
         generateInit.run()
+
+    def generate_md(self):
+        generator = GenerateMD.Generator(self.log)
+        generator.run()
+
+
+
 
 
     def open_url(self, url):
@@ -208,6 +218,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             lambda: self.start_task("download_avatar"))
         self.startGeneratePDF.clicked.connect(
             lambda: self.start_task("generate_pdf"))
+        self.pushButton_statGenerateMD.clicked.connect(
+            lambda: self.start_task("generate_md"))
 
         self.load_setting_values()
 

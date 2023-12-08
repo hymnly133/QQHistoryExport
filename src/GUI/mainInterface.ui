@@ -176,6 +176,9 @@
           <pointsize>10</pointsize>
          </font>
         </property>
+        <property name="text">
+         <string>1336325450</string>
+        </property>
        </widget>
       </item>
       <item row="0" column="1">
@@ -198,6 +201,9 @@
           <family>宋体</family>
           <pointsize>10</pointsize>
          </font>
+        </property>
+        <property name="text">
+         <string>3536928786</string>
         </property>
        </widget>
       </item>
@@ -366,6 +372,9 @@
           <pointsize>10</pointsize>
          </font>
         </property>
+        <property name="text">
+         <string>D:\QQHistoryExport-master\ptt</string>
+        </property>
        </widget>
       </item>
       <item row="8" column="1" colspan="3">
@@ -426,6 +435,9 @@
           <family>宋体</family>
           <pointsize>10</pointsize>
          </font>
+        </property>
+        <property name="text">
+         <string>D:\QQHistoryExport-master\chatimg</string>
         </property>
        </widget>
       </item>
@@ -763,6 +775,9 @@
            <family>宋体</family>
            <pointsize>10</pointsize>
           </font>
+         </property>
+         <property name="text">
+          <string>D:\QQHistoryExport-master\com.tencent.mobileqq</string>
          </property>
         </widget>
        </item>
@@ -1346,19 +1361,19 @@ ReportLab_confige.ini
      </font>
     </property>
     <property name="title">
-     <string>生成HTML</string>
+     <string>生成MD</string>
     </property>
-    <widget class="QLabel" name="label_23">
+    <widget class="QPushButton" name="pushButton_statGenerateMD">
      <property name="geometry">
       <rect>
        <x>30</x>
        <y>20</y>
-       <width>71</width>
-       <height>21</height>
+       <width>121</width>
+       <height>23</height>
       </rect>
      </property>
      <property name="text">
-      <string>敬请期待</string>
+      <string>开始生成MD</string>
      </property>
     </widget>
    </widget>

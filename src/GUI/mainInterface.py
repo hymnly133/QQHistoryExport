@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'src/GUI/maininterface.ui'
+# Form implementation generated from reading ui file 'mainInterface.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -658,9 +658,9 @@ class Ui_MainWindow(object):
         font.setPointSize(10)
         self.generateHTMLConfainer.setFont(font)
         self.generateHTMLConfainer.setObjectName("generateHTMLConfainer")
-        self.label_23 = QtWidgets.QLabel(self.generateHTMLConfainer)
-        self.label_23.setGeometry(QtCore.QRect(30, 20, 71, 21))
-        self.label_23.setObjectName("label_23")
+        self.pushButton_statGenerateMD = QtWidgets.QPushButton(self.generateHTMLConfainer)
+        self.pushButton_statGenerateMD.setGeometry(QtCore.QRect(30, 20, 121, 23))
+        self.pushButton_statGenerateMD.setObjectName("pushButton_statGenerateMD")
         self.Confainer_2 = QtWidgets.QGroupBox(self.centralwidget)
         self.Confainer_2.setGeometry(QtCore.QRect(400, 320, 211, 351))
         font = QtGui.QFont()
@@ -694,7 +694,9 @@ class Ui_MainWindow(object):
         self.findFilesModeRadioButton1.setText(_translate("MainWindow", "选择整个Data文件夹"))
         self.findFilesModeRadioButton2.setText(_translate("MainWindow", "分别选取每个文件"))
         self.label_8.setText(_translate("MainWindow", "解析选项"))
+        self.selfQQInputBox.setText(_translate("MainWindow", "1336325450"))
         self.label_15.setText(_translate("MainWindow", "你自己的QQ号"))
+        self.targetQQInputBox.setText(_translate("MainWindow", "3536928786"))
         self.label_19.setText(_translate("MainWindow", "shortvideo文件夹"))
         self.label_11.setText(_translate("MainWindow", "大表情 即单独发QQ表情出来的大表情"))
         self.label_16.setText(_translate("MainWindow", "目标QQ号"))
@@ -703,8 +705,10 @@ class Ui_MainWindow(object):
         self.videoPathSelectButton.setText(_translate("MainWindow", "选取"))
         self.label_12.setText(_translate("MainWindow", "chatimg文件夹"))
         self.chatimgPathSelectButton.setText(_translate("MainWindow", "选取"))
+        self.pttPathInputBox.setText(_translate("MainWindow", "D:\\QQHistoryExport-master\\ptt"))
         self.label_9.setText(_translate("MainWindow", "选该项会解析语音文件"))
         self.label_13.setText(_translate("MainWindow", "ptt文件夹"))
+        self.chatimgPathInputBox.setText(_translate("MainWindow", "D:\\QQHistoryExport-master\\chatimg"))
         self.label_17.setText(_translate("MainWindow", "模式"))
         self.groupModeRadioButton.setText(_translate("MainWindow", "群聊"))
         self.friendModeRadioButton.setText(_translate("MainWindow", "私聊"))
@@ -716,6 +720,7 @@ class Ui_MainWindow(object):
         self.dataDirPathSelectButton.setText(_translate("MainWindow", "选取"))
         self.label_1.setText(_translate("MainWindow", "com.tencent.mobileqq\n"
 "文件夹"))
+        self.dataDirPathInputBox.setText(_translate("MainWindow", "D:\\QQHistoryExport-master\\com.tencent.mobileqq"))
         self.useSlowtableCheckBox2.setText(_translate("MainWindow", "解析两个月以前的聊天记录"))
         self.label_3.setText(_translate("MainWindow", "QQ号_slowtable.db"))
         self.qqSlowtableDbPathSelectButton.setText(_translate("MainWindow", "选取"))
@@ -741,8 +746,8 @@ class Ui_MainWindow(object):
         self.startGeneratePDF.setText(_translate("MainWindow", "开始生成"))
         self.openSendersJsonButton.setText(_translate("MainWindow", "打开文件"))
         self.openPDFconfigButton.setText(_translate("MainWindow", "打开文件"))
-        self.generateHTMLConfainer.setTitle(_translate("MainWindow", "生成HTML"))
-        self.label_23.setText(_translate("MainWindow", "敬请期待"))
+        self.generateHTMLConfainer.setTitle(_translate("MainWindow", "生成MD"))
+        self.pushButton_statGenerateMD.setText(_translate("MainWindow", "开始生成MD"))
         self.Confainer_2.setTitle(_translate("MainWindow", "说明"))
         self.label_24.setText(_translate("MainWindow", "<html><head/><body><p>本项目<span style=\" font-size:11pt; font-weight:600;\">完全免费开源</span></p><p><span style=\" font-size:11pt; font-weight:600;\">请勿用于商业用途！</span></p><p>关于如何使用软件，请参考教程:</p><p><a href=\"https://github.com/Hakuuyosei/QQHistoryExport\"><span style=\" text-decoration: underline; color:#0000ff;\">github.com/</span></a></p><p><a href=\"https://github.com/Hakuuyosei/QQHistoryExport\"><span style=\" text-decoration: underline; color:#0000ff;\">Hakuuyosei/</span></a></p><p><a href=\"https://github.com/Hakuuyosei/QQHistoryExport\"><span style=\" text-decoration: underline; color:#0000ff;\">QQHistoryExport</span></a></p><p>（点击右下角按钮直达）</p><p><br/>白羽夜星制作组 制作</p><p>感谢您的使用！</p></body></html>"))
-import src.GUI.res_rc
+
